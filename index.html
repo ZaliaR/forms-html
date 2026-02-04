@@ -1,123 +1,137 @@
-# Doctype html 
+<DOCTYPE html>
+  <html lang="en">
 
-# body
-# h1 Name, probably Minecraft build suggestor /h1
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spider Cookie Recipe</title>
+</head>
 
-# p A little paragraph explaining what the suggestor is and its purpose /p
+<body>
 
-# form action "___.php"
-  # fieldset 
-     # legend Build difficulty /legend 
-     # div 
-       # label for "beginner" beginner /label 
-       # input type radio name difficulty id beginner value beginner /input 
-      # /div 
-      # div 
-       # label for easy easy /label 
-       # input type radio name difficulty id easy value easy /input
-      # /div
-      # div 
-       # label for medium medium /label 
-       # input type radio name difficulty id medium value medium /input
-      # /div
-      # div 
-       # label for chalenging challenging /label
-       # input type radio name difficulty id challenging value challenging /input
-      # /div
-  # /fieldset
+  <h1>Minecraft Build Suggestor</h1>
 
-  # fieldset 
-    # legend Size /legend 
-    # div 
-      # label for ltchunk Less than a chunk /label 
-      # input type checkbox name size id ltchunk value ltchunk /input 
-    # /div 
-    # div 
-      # label for onetwo One to two chunks /label 
-      # input type checkbox name size id onetwo value onetwo /input 
-    # /div
-    # div 
-      # label for threesix Three to six chunks /label
-      # input type checkbox name size id threesix value threesix /input
-    # /div
-    # div
-      # label for seventwelve Seven to twelve chunks /label
-      # input type checkbox name size id seventwelve value seventwelve /input
-    # /div
-    # div 
-      # label for thirteentwenty Thirteen to twenty chunks /label
-      # input type checkbox name size id thirteentwenty value thirteentwenty
-    # /div
-    # div 
-      # label for overtwenty Over twenty chunks /label
-      # input type checkbox name size id overtwenty value overtwenty /input
-    # /div
-  # /fieldset
+  <p>This program will suggest a Minecraft build based on the preferences you state in this form.</p>
 
-  # fieldset 
-    # legend Blocks /legend 
-    # label for main Main Block /label 
-    # input name main id main value Main Block /input 
-    # label for second Secondary Block /label 
-    # inut name second id second value Secondary Block /input 
-  # /fieldset
+  <form action "build_suggestor.php"> 
+    <fieldset>
+      <legend>Build difficulty</legend>
+      <div>
+        <label for "beginner">beginner</label>
+        <input type="radio" name="difficulty" id="beginner" value="beginner"></input>
+      </div>
+      <div>
+        <label for="easy">easy</label>
+        <input type="radio" name="difficulty" id="easy" value="easy"></input>
+      </div>
+      <div>
+        <label for="medium">medium</label>
+        <input type="radio" name="difficulty" id="medium" value="medium"></input>
+      </div>
+      <div>
+        <label for="challenging">challenging</label>
+        <input type="radio" name="difficulty" id="challenging" value="challenging"></input>
+      </div>
+    </fieldset>
 
-  # fieldset 
-    # legend Theme /legend 
-    # div 
-      # label for classic Classic /label 
-      # input type checkbox name theme id classic value classic /input 
-    # /div 
-    # div 
-      # label for nature Nature /label 
-      # input type checkbox name theme id nature value nature /input 
-    # /div
-    # div 
-      # label for fantasy Fantasy /label
-      # input type checkbox name theme id fantasy value fantasy /input
-    # /div
-    # div
-      # label for steampunk Steampunk chunks /label
-      # input type checkbox name theme id steampunk value steampunk /input
-    # /div
-    # div 
-      # label for gothic Gothic /label
-      # input type checkbox name theme id gothic value gothic /input
-    # /div
-    # div 
-      # label for minimalist Minimalist /label
-      # input type checkbox name theme id minimalist value minimalist /input
-    # /div
-  # /fieldset
+    <fieldset>
+      <legend>Size</legend>
+      <div>
+        <label for="ltchunk">Less than a chunk</label>
+        <input type="checkbox" name="size" id="ltchunk" value="ltchunk"></input>
+      </div>
+      <div>
+        <label for="onetwo">One to two chunks</label>
+        <input type="checkbox" name="size" id="onetwo" value="onetwo"></input>
+      </div>
+      <div>
+        <label for="threesix">Three to six chunks</label>
+        <input type="checkbox" name="size" id="threesix" value="threesix"></input>
+      </div>
+      <div>
+        <label for="seventwelve">Seven to twelve chunks</label>
+        <input type="checkbox" name="size" id="seventwelve" value="seventwelve"></input>
+      </div>
+      <div>
+        <label for="thirteentwenty">Thirteen to twenty chunks</label>
+        <input type="checkbox" name="size" id="thirteentwenty" value="thirteentwenty"></input>
+      </div>
+      <div>
+        <label for="overtwenty">Over twenty chunks</label>
+        <input type="checkbox" name="size" id="overtwenty" value="overtwenty"></input>
+      </div>
+    </fieldset>
 
-  # fieldset 
-    # legend Number of players living here /legend 
-    # div 
-      # label for players Players /label 
-      # input type number name players id players min 1 max 100 /input 
-    # /div 
-  # /fieldset
-  
-  # fieldset 
-    # legend Do you want to be suggested skybases or underwater bases? /legend 
-    # div 
-      # label for both I'd like to be suggested both /label 
-      # input type radio name skysea id both value both /input
-    # /div
-    # div
-      # label for skybase Just skybases /label
-      # input type radio name skysea id skybase value skybase /input 
-    # /div
-    # div 
-      # label for underwater Just underwater bases /label 
-      # input type radio name skysea id underwater value underwater /input
-    # /div
-    # div 
-      # label for neither Neither, just regular ground builds /label 
-      # input type radio name skysea id neither value neither /input 
-    # /div
-  # /fieldset
+    <!-- I don't know if I need divs for this one -->
+    <fieldset>
+      <legend>Blocks</legend>
+      <div>
+        <label for="main">Main Block</label>
+        <input name="main" id="main" value="Main Block"></input>
+      </div>
+      <div>
+        <label for="second">Secondary Block</label>
+        <input name="second" id="second" value="Secondary Block"></input>
+      </div>
+    </fieldset>
 
-  # input type submit value "Get Suggestion!"
+    <fieldset>
+      <legend>Theme</legend>
+      <div>
+        <label for="classic">Classic</label>
+        <input type="checkbox" name="theme" id="classic" value="classic"></input>
+      </div>
+      <div>
+        <label for="nature">Nature</label>
+        <input type="checkbox" name="theme" id="nature" value="nature"></input>
+      </div>
+      <div>
+        <label for="fantasy">Fantasy</label>
+        <input type="checkbox" name="theme" id="fantasy" value="fantasy"></input>
+      </div>
+      <div>
+        <label for="steampunk">Steampunk</label>
+        <input type="checkbox" name="theme" id="steampunk" value="steampunk"></input>
+      </div>
+      <div>
+        <label for="gothic">Gothic</label>
+        <input type="checkbox" name="theme" id="gothic" value="gothic"></input>
+      </div>
+      <div>
+        <label for="minimalist">Minimalist</label>
+        <input type="checkbox" name="theme" id="minimalist" value="minimalist"></input>
+      </div>
+    </fieldset>
 
-# 
+    <fieldset>
+      <legend>Number of players living here</legend>
+      <div>
+        <label for="players">Players</label>
+        <input type="number" name="players" id="players" min="1" max="100"></input>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Do you want to be suggested skybases or underwater bases?</legend>
+      <div>
+        <label for="both">I'd like to be suggested both</label>
+        <input type="radio" name="skysea" id="both" value="both"></input>
+      </div>
+      <div>
+        <label for="skybase">Just skybases</label>
+        <input type="radio" name="skysea" id="skybase" value="skybase"></input>
+      </div>
+      <div>
+        <label for="underwater">Just underwater bases</label>
+        <input type="radio" name="skysea" id="underwater" value="underwater"></input>
+      </div>
+      <div>
+        <label for="neither">Neither, just regular ground builds</label>
+        <input type="radio" name="skysea" id="neither" value="neither"></input>
+      </div>
+    </fieldset>
+
+    <input type="submit" value="Get Suggestion!"></input>
+  </form>
+
+</body>
