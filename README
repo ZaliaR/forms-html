@@ -1,0 +1,39 @@
+Topic: Minecraft build suggestor
+Use: A program that suggests Minecraft builds depending on the user’s preferences.
+Goal: The user is given a tutorial that fits their building desires.
+
+*6-10 pieces of info
+
+Build Difficulty - radio
+Beginner
+Easy
+Medium
+Challenging
+
+Size - checkbox
+< 1 chunk
+1-2 chunks
+3-6 chunks
+7-12 chunks
+13-20 chunks
+> 20 chunks
+
+Main block - text input
+
+Secondary block - text input
+
+Theme - checkbox
+Classic
+Nature
+Fantasy
+Steampunk
+Gothic
+Minimalist
+
+How many players will live here - number input
+
+Do you want to be suggested skybases or underwater bases? - radio
+Yes to both
+Just skybases
+Just underwater bases
+Neither
